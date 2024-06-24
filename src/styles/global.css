@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+    @apply flex justify-center items-center
+}
+
+header h1 { 
+    @apply text-[80px] text-red font-light
+}
+
+footer {
+    @apply flex flex-col justify-center items-center gap-2 text-neutral-400 text-xs
+}
+
+footer a {
+    @apply text-neutral-700 hover:underline
+}
+
+li input[type="checkbox"] {
+    @apply cursor-pointer appearance-none w-[30px] h-[30px] border absolute flex items-center justify-center rounded-[50%] border-solid border-[#BABBBF] left-2 before:content-[''] before:absolute before:h-[15px] before:w-[15px] before:opacity-0 before:transition-all before:duration-[600ms] before:ease-[ease-in-out] before:w-2 before:h-[15px] before:rotate-[40deg] before:border-r-2 before:border-r-[#207F0B] before:border-b-2 before:border-b-[#207F0B] before:border-solid checked:before:opacity-100;
+  }

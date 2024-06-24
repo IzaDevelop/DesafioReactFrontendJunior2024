@@ -1,9 +1,10 @@
-import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./router/Router";
 
 export default function App() {
   return (
-    <section>
-      <h1>Todos</h1>
-    </section>
-  );
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+  )
 }
